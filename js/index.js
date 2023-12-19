@@ -59,6 +59,18 @@ const swiper1 = new Swiper('.swiper1', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    520: {
+      slidesPerView: 2
+    },
+    950: {
+      slidesPerView: 3
+    }
+  },
 });
 
 const swiper2 = new Swiper('.swiper2', {
@@ -86,6 +98,18 @@ const swiper2 = new Swiper('.swiper2', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
+  },
+  
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    520: {
+      slidesPerView: 2
+    },
+    950: {
+      slidesPerView: 3
+    }
   },
 });
 

@@ -15,6 +15,11 @@ body {
 .navbar {
   transition: top 0.7s ease;
 }
+
+.wrapper-nav-item {
+  width: 50%;
+}
+
 .navbar-hide {
   top: -110px;
 }
@@ -30,6 +35,13 @@ body {
 
 .slogan-container {
   height: 500px;
+}
+
+.slogan-container h2 {
+  font-family: 'Poppins';
+  margin-top: 130px;
+  line-height: 45px;
+  font-size: 2.3rem;
 }
 
 .btn-getstarted {
@@ -252,7 +264,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 25%;
+  width: 350px;
   margin: 10px auto;
   text-decoration: none;
   border-radius: 50px;
@@ -308,10 +320,30 @@ body {
 
 /* mobile screen */
 @media screen and (max-width: 768px) {
+  .wrapper-nav-item {
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper-nav-item .nav-logo {
+    width: 100px;
+    /* border: 2px solid black; */
+  }
+
+  .wrapper-nav-item .navbar-toggler {
+    border: white;
+  }
+
   .slogan-container {
     position: relative;
     top: -50px;
     z-index: 99;
+  }
+
+  .slogan-container h2 {
+    font-size: 2rem;
   }
 
   .image-container1 {
@@ -323,5 +355,52 @@ body {
     width: 50px;
     margin-right: 5px;
     margin-bottom: 10px;
+  }
+
+  .container1 {
+    height: 80vh;
+  }
+
+  .container2 {
+    height: 200vh;
+  }
+
+  .container3 {
+    height: 170vh;
+  }
+
+  .swiper1 .img-wrapper img {
+    width: 100%;
+  }
+
+  .swiper1 .swiper-wrapper h5 {
+    font-size: 15px;
+  }
+
+  .row2 .swiper2 {
+    height: 450px;
+  }
+
+  .row2 .swiper2 .swiper-wrapper .swiper-slide {
+    height: 400px;
+  }
+
+  .container4 {
+    height: 380vh;
+  }
+
+  .container6 {
+    margin-top: 50px;
+    height: 60vh;
+  }
+
+  .container6 .btn-whatsapp {
+    width: 150px;
+    position: relative;
+    right: 27px;
+  }
+
+  .container7 {
+    height: 120vh;
   }
 }
