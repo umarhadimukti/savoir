@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', 'Poppins', sans-serif;
+}
+
+.navbar {
+  transition: top 0.7s ease;
+}
+.navbar-hide {
+  top: -110px;
+}
+.nav-link:hover {
+  color: salmon;
+  cursor: pointer;
+}
+
+.container1 {
+  /* border: 2px solid black; */
+  height: 90vh;
+}
+
+.slogan-container {
+  height: 500px;
+}
+
+.btn-getstarted {
+  font-family: 'Poppins';
+  border-radius: 20px;
+  background-color:rgb(250, 92, 61);
+  color: white;
+}
+
+.btn-getstarted:hover {
+  background-color: rgb(255, 244, 240);
+  color: black;
+  border: 2px solid rgb(250, 92, 61);
+}
+
+.image-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.image-container1 img {
+  width: 700px;
+}
+
+.container-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-logo .item-logo {
+  width: 9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-logo img {
+  width: 100%;
+}
+
+.container-logo img:nth-child(3) {
+  width: 140px;
+}
+
+.container-logo img:nth-child(5) {
+  width: 140px;
+}
+
+.container2 {
+  height: 100vh;
+}
+
+.container2 .row1 {
+  padding-top: 80px;
+}
+
+.container2 .row1 h3 {
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+
+.container2 .fitur-logo {
+  margin-top: 80px;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.reveal:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.container3 {
+  height: 100vh;
+}
+
+.swiper1 {
+  width: 900px;
+  height: 350px;
+}
+
+.swiper2 {
+  width: 100%;
+  height: 570px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.swiper-wrapper:hover {
+  cursor: grab;
+}
+.swiper-wrapper:active {
+  cursor: grabbing;
+}
+
+.swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* swiper pagination bullet */
+.swiper-pagination-bullet {
+  background-color: rgb(75, 23, 17);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(247, 82, 64);
+}
+
+.swiper2 .swiper-pagination-bullet {
+  background-color: purple;
+}
+
+.swiper2 .swiper-pagination-bullet-active {
+  background-color: rgb(116, 7, 116);
+}
+/* swiper pagination bullet end */
+
+.swiper1 .swiper-slide .img-wrapper {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.swiper-slide .img-wrapper img {
+  width: 100%;
+}
+
+.swiper-slide .img-wrapper img:nth-child(2) {
+  position: relative;
+  top: -100px;
+}
+
+.swiper-slide h5 {
+  font-family: 'Poppins';
+  font-weight: 900;
+}
+
+.container3 { 
+  height: 145vh;
+}
+
+.container4 {
+  background-color: rgb(250, 92, 61);
+  width: 100%;
+  height: 145vh;
+}
+
+.container-team {
+  transform-style: preserve-3d;
+}
+
+.card-team {
+  border-radius: 5px;
+  background-color: rgb(245, 241, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 10px 1px rgba(92, 160, 8, 0.5);
+}
+
+.card-team:hover {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.container5 .card-team .img-wrapper {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 7px solid rgb(198, 197, 197);
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.card-team .img-wrapper img {
+  width: 100%;
+  height: 110%;
+}
+
+.container-team .wrapper-icons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.wrapper-icons i {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.container6 {
+  height: 65vh;
+}
+
+.container6 a.btn-whatsapp {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+  margin: 10px auto;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: rgb(23, 106, 23)
+}
+
+.container6 a.btn-whatsapp:hover {
+  background-color: rgb(42, 224, 33);
+}
+
+.btn-whatsapp i.bi-whatsapp {
+  color: rgb(67, 226, 67);
+  font-size: 4rem;
+}
+
+.container7 {
+  height: 100vh;
+  background-image: url('../image/footerimage.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.container7 .wrapper-informasi {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper-informasi .card-informasi {
+  width: 270px;
+  height: 100px;
+  padding: 2px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background-color: rgba(244, 241, 241, 0.663);
+}
+
+.wrapper-informasi .card-informasi:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+.card-informasi i {
+  font-size: 2.3rem;
+  color: rgb(13, 141, 13);
+}
+
+/* mobile screen */
+@media screen and (max-width: 768px) {
+  .slogan-container {
+    position: relative;
+    top: -50px;
+    z-index: 99;
+  }
+
+  .image-container1 {
+    position: absolute;
+    opacity: 0.3;
+  }
+
+  .container-logo img {
+    width: 50px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+}
